@@ -13,6 +13,7 @@ const currentLiabilitiesBtn = document.querySelector(
 const longTermLiabilitiesBtn = document.querySelector(
   ".add-long-term-liabilities-btn"
 );
+// end buttons
 
 //! CHECK AND DISPLAY CALCULATE POSITION BUTTON
 function checkAndDisplayCalculateBtn() {
@@ -122,9 +123,9 @@ function checkAndDisplayCalculateBtn() {
       const totalPosition = totalAssets - totalLiabilities;
       const totalPositionAmount = document.querySelector(".position-amount");
       totalPositionAmount.textContent = `$${totalPosition.toFixed(2)}`;
-    });
-  }
-}
+    }); // end calculate position event listener
+  } // end if statement
+} // end check and display calculate btn
 
 //! CURRENT ASSETS EVENT LISTENER
 currentAssetsBtn.addEventListener("click", () => {
@@ -198,7 +199,7 @@ currentAssetsBtn.addEventListener("click", () => {
   tempInvestmentsDiv1.appendChild(tempInvestmentsInput1);
   assetsContainerDiv.appendChild(totalCurrentAssetsParagraph);
   currentAssetsBtn.style.display = "none";
-});
+}); // end current assets event listener
 
 //! INVESTMENTS EVENT LISTENER
 investmentsBtn.addEventListener("click", () => {
@@ -274,7 +275,7 @@ investmentsBtn.addEventListener("click", () => {
   tempInvestmentsDiv2.appendChild(tempInvestmentsInput2);
   investmentsContainerDiv.appendChild(totalInvestmentsParagraph);
   investmentsBtn.style.display = "none";
-});
+}); // end investments event listener
 
 //! INTANGIBLES EVENT LISTENER
 intangiblesBtn.addEventListener("click", () => {
@@ -322,7 +323,7 @@ intangiblesBtn.addEventListener("click", () => {
   goodwillDiv.appendChild(goodwillInput);
   intangiblesContainerDiv.appendChild(totalIntangiblesParagraph);
   intangiblesBtn.style.display = "none";
-});
+}); // end intangibles event listener
 
 //! CURRENT LIABILITIES EVENT LISTENER
 currentLiabilitiesBtn.addEventListener("click", () => {
@@ -412,7 +413,7 @@ currentLiabilitiesBtn.addEventListener("click", () => {
   accruedExpensesDiv.appendChild(accruedExpensesInput);
   currentLiabilitiesContainerDiv.appendChild(totalCurrentLiabilitiesParagraph);
   currentLiabilitiesBtn.style.display = "none";
-});
+}); // end current liabilities event listener
 
 //! LONG TERM LIABILITIES EVENT LISTENER
 longTermLiabilitiesBtn.addEventListener("click", () => {
@@ -464,4 +465,4 @@ longTermLiabilitiesBtn.addEventListener("click", () => {
     totalLongTermLiabilitiesParagraph
   );
   longTermLiabilitiesBtn.style.display = "none";
-});
+}); // end long term liabilities event listener

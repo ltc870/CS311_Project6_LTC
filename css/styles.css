@@ -41,6 +41,7 @@ body {
 .header-title {
   padding-left: .25em;
 }
+/* end header section */
 
 /* sub-sections section */
 .sub-sections {
@@ -54,6 +55,7 @@ body {
 .sub-title {
   padding-left: .25em;
 }
+/* end sub-sections section */
 
 /* main section */
 .main-section {
@@ -71,7 +73,9 @@ body {
   margin: auto;
   flex: 1 0 auto;
 }
+/* end main section */
 
+/* assets section */
 .current-assets-title {
   grid-area: current-assets;
 }
@@ -99,7 +103,9 @@ body {
 .assets-text-box {
   text-align: right;
 }
+/* end assets section */
 
+/* investments section */
 .investments-title {
   grid-area: investment-prop-equip;
 }
@@ -127,7 +133,9 @@ body {
 .investments-text-box {
   text-align: right;
 }
+/* end investments section */
 
+/* intangibles section */
 .intangibles-title {
   grid-area: intangibles;
 }
@@ -155,7 +163,9 @@ body {
 .intangibles-text-box {
   text-align: right;
 }
+/* end intangibles section */
 
+/* current liabilities section */
 .current-liabilities-title {
   grid-area: current-liabilities;
 }
@@ -183,7 +193,9 @@ body {
 .current-liabilities-text-box {
   text-align: right;
 }
+/* end current liabilities section */
 
+/* long-term liabilities section */
 .long-term-liabilities-title {
   grid-area: long-term-liabilities;
 }
@@ -211,7 +223,9 @@ body {
 .long-term-liabilities-text-box {
   text-align: right;
 }
+/* end long-term liabilities section */
 
+/* total position section */
 .total-position-title {
   grid-area: total-position;
 }
@@ -224,7 +238,9 @@ body {
 .calculate-position-btn {
   font-weight: bold;
 }
+/* end total position section */
 
+/* footer section */
 .footer {
   background-color: #752936;
   color: #FFFFFF;
@@ -237,5 +253,6 @@ body {
   padding-left: .25em;
   margin: 0;
 }
+/* end footer section */
 
 
