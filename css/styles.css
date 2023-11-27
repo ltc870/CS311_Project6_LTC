@@ -1,0 +1,241 @@
+/* 
+colors: #752936, #e0b341, #000000
+*/
+
+/* CSS RESET */
+html {
+  box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Calibri, sans-serif;
+  background-color: #e0b341;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*@ TYPOGRAPHY  */
+
+.sub-title {
+  color: #FFFFFF;
+}
+
+/*@ LAYOUT  */
+
+/* header section */
+.header {
+  background-color: #752936;
+  color: #FFFFFF;
+  display: flex;
+}
+
+.header-title {
+  padding-left: .25em;
+}
+
+/* sub-sections section */
+.sub-sections {
+  display: grid;
+  background-color: #000000;
+  grid-template-columns: 1fr 1fr;
+  width: 99.3%;
+  margin: .75em auto;
+}
+
+.sub-title {
+  padding-left: .25em;
+}
+
+/* main section */
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "current-assets current-assets current-liabilities current-liabilities"
+    "current-assets-inputs current-assets-inputs current-liabilities-inputs current-liabilities-inputs"
+    "investment-prop-equip investment-prop-equip long-term-liabilities long-term-liabilities"
+    "investment-prop-equip-inputs investment-prop-equip-inputs long-term-liabilities-inputs long-term-liabilities-inputs"
+    "intangibles intangibles total-position total-position"
+    "intangibles-inputs intangibles-inputs calculated-position .";
+  width: 98.9%;
+  margin: auto;
+  flex: 1 0 auto;
+}
+
+.current-assets-title {
+  grid-area: current-assets;
+}
+
+.assets-container {
+  grid-area: current-assets-inputs;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-self: end;
+  align-items: end;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.total-current-assets {
+  text-decoration-line: underline overline;
+}
+
+.add-current-assets-btn {
+  font-weight: bold;
+  margin: auto;
+}
+
+.assets-text-box {
+  text-align: right;
+}
+
+.investments-title {
+  grid-area: investment-prop-equip;
+}
+
+.investments-container {
+  grid-area: investment-prop-equip-inputs;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-self: end;
+  align-items: end;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.total-investments {
+  text-decoration-line: underline overline;
+}
+
+.add-investments-btn {
+  font-weight: bold;
+  margin: auto;
+}
+
+.investments-text-box {
+  text-align: right;
+}
+
+.intangibles-title {
+  grid-area: intangibles;
+}
+
+.intangibles-container {
+  grid-area: intangibles-inputs;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-self: end;
+  align-items: end;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.total-intangibles {
+  text-decoration-line: underline overline;
+}
+
+.add-intangibles-btn {
+  font-weight: bold;
+  margin: auto;
+}
+
+.intangibles-text-box {
+  text-align: right;
+}
+
+.current-liabilities-title {
+  grid-area: current-liabilities;
+}
+
+.current-liabilities-container {
+  grid-area: current-liabilities-inputs;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-self: end;
+  align-items: end;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.total-current-liabilities {
+  text-decoration-line: underline overline;
+}
+
+.add-current-liabilities-btn {
+  font-weight: bold;
+  margin: auto;
+}
+
+.current-liabilities-text-box {
+  text-align: right;
+}
+
+.long-term-liabilities-title {
+  grid-area: long-term-liabilities;
+}
+
+.long-term-liabilities-container {
+  grid-area: long-term-liabilities-inputs;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-self: end;
+  align-items: end;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.total-long-term-liabilities {
+  text-decoration-line: underline overline;
+}
+
+.add-long-term-liabilities-btn {
+  font-weight: bold;
+  margin: auto;
+}
+
+.long-term-liabilities-text-box {
+  text-align: right;
+}
+
+.total-position-title {
+  grid-area: total-position;
+}
+
+.total-position-container {
+  grid-area: calculated-position;
+  font-weight: bold;
+}
+
+.calculate-position-btn {
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #752936;
+  color: #FFFFFF;
+  display: flex;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.footer-text {
+  padding-left: .25em;
+  margin: 0;
+}
+
+
